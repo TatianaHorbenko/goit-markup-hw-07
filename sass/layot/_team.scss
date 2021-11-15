@@ -1,0 +1,25 @@
+
+.team {
+    background: #f5f4fa;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .our {
+    text-align: center;
+      margin-bottom: 50px;
+  }
+.name {
+  @include font($fw:500);
+    
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  
+  .name-position {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
