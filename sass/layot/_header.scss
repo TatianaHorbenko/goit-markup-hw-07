@@ -34,7 +34,7 @@
   text-decoration: none;
 }
 
-.header-mailto {
+.header-com__contact-item_header-mailto {
   @include font($fw:500, $fs:14px);
     
   line-height: 1.14;
@@ -42,7 +42,7 @@
   list-style: none;
   text-decoration: none;
   color: var(--primary-text-color);
-  margin-right: 50px;
+  
 
   &:hover,
   &:focus {
@@ -54,8 +54,7 @@
   fill: var(--accent-color);
 }
 }
-
-.header-tel {
+.header-com__contact-item{
   @include font($fw:500, $fs:14px);
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -65,6 +64,11 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-tel {
+ 
+  margin-left: 50px;
 
   &:hover,
   &:focus {
@@ -76,17 +80,22 @@
     fill: var(--accent-color);
   }
   }
- 
-  .items {
-    display: flex;
+  .banner:not(:last-child) {
+    margin-right: 50px;
+  }
+  .header-com__items{
     @include font($fw:500, $fs:14px);
     line-height: 1.14;
     letter-spacing: 0.02em;
     list-style: none;
     text-decoration: none;
-    display: flex;
-    margin-left: auto;
     align-items: center;
+
+  }
+  .items {
+    display: flex;
+  margin-left: auto;
+    
   }
   .contact-icon {
     fill: #757575;
@@ -99,4 +108,12 @@
     margin-right: 50px;
   }
   
+  .header-nav__list{
+    @include font($fw:500, $fs:14px);
+    
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    list-style: none;
+  }
   
