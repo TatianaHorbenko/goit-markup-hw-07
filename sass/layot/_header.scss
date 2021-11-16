@@ -116,4 +116,41 @@
     text-decoration: none;
     list-style: none;
   }
+  .header-nav__link {
+    color: var(--accent-color);
+    list-style: none;
+    text-decoration: none;
+    list-style: none;
+    text-decoration: none;
+    color: var(--header-color);
+    transition-property: color;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+  }
+  .menu-link {
+    position: relative;
+    
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+  }
+  }
+  .current {
+    color: var(--accent-color);
+  
+    &::after {
+      display: block;
+      position: absolute;
+      content: "";
+      height: 4px;
+      width: 100%;
+      border-radius: 2px;
+      left: 0;
+      bottom: -32px;
+      background-color: var(--accent-color);
+    }
+  }
+  
+  
   
